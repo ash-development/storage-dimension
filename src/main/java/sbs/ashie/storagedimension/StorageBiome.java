@@ -29,11 +29,6 @@ public class StorageBiome {
 
     private static GenerationSettings createGenerationSettings() {
         GenerationSettings.Builder builder = new GenerationSettings.Builder();
-        builder.surfaceBuilder(SurfaceBuilder.DEFAULT.withConfig(new SurfaceConfig(
-                Blocks.WHITE_CONCRETE.getDefaultState(),
-                Blocks.WHITE_CONCRETE.getDefaultState(),
-                Blocks.WHITE_CONCRETE.getDefaultState()
-        )));
         return builder.build();
     }
 }

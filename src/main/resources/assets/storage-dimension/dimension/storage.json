@@ -1,0 +1,12 @@
+{
+  "type": "storage-dimension:storage",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [
+        { "block": "minecraft:white_concrete", "height": 64 }
+      ],
+      "biome": "storage-dimension:storage_biome"
+    }
+  }
+}
