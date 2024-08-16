@@ -5,11 +5,11 @@
 	"name": "The Storage Dimension",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"ash-development"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/ash-development"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/storage-dimension/icon.png",
@@ -33,5 +33,8 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu:api": true
 	}
 }
