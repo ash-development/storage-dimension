@@ -17,3 +17,7 @@ jobs:
 
       - name: "Generate Changelog"
         uses: sercanuste/gitmoji-changelog-action@v1
+        with:
+           format: markdown
+           preset: maven
+        
