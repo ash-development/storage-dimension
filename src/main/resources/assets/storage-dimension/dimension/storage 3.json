@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [
+        {
+          "block": "minecraft:white_concrete",
+          "height": 1
+        }
+      ],
+      "biome": "minecraft:plains",
+      "structures": {
+        "structures": {}
+      }
+    }
+  },
+  "mob_spawn_settings": {
+    "creature_spawn_probability": 0.0,
+    "spawners": [],
+    "spawn_costs": {}
+  },
+  "sky_properties": {
+    "fog_color": "#FFFFFF",
+    "sky_color": "#FFFFFF",
+    "water_fog_color": "#FFFFFF",
+    "water_color": "#FFFFFF"
+  },
+  "ambient_light": 1.0,
+  "has_ceiling": false,
+  "has_skylight": true,
+  "ultrawarm": false,
+  "natural": false,
+  "coordinate_scale": 1.0,
+  "fixed_time": 6000,
+  "has_raids": false,
+  "respawn_anchor_works": false,
+  "bed_works": true,
+  "piglin_safe": false,
+  "logical_height": 256,
+  "infiniburn": "minecraft:infiniburn_overworld"
+}
