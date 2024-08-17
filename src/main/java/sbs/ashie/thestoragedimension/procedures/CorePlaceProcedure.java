@@ -31,9 +31,12 @@ public class CorePlaceProcedure {
 		LOGGER.info(y + 1);
 		LOGGER.info(z);
 		//String firstplaced = "";
-		LOGGER.info("Detecting block");
-		LOGGER.info(world.getBlockState(BlockPos.containing(x, y + 1, z)));
+		LOGGER.info("Detecting block +1");
+		LOGGER.info(BlockPos.containing(x, y + 1, z));
 		LOGGER.info((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock());
+		LOGGER.info("Detecting block reg");
+		LOGGER.info(BlockPos.containing(x, y , z));
+		LOGGER.info((world.getBlockState(BlockPos.containing(x, y, z))).getBlock());
 		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == StoragedimensionModBlocks.CORE) {
 			LOGGER.info((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock());
 			if ((firstplaced).equals("false")) {
