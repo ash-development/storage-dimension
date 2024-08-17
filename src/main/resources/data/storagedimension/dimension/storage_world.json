@@ -10,7 +10,7 @@
         },
         {
           "block": "minecraft:white_concrete",
-          "height": 6
+          "height": 64
         }
       ],
       "biome": "storagedimension:storage_biome"
