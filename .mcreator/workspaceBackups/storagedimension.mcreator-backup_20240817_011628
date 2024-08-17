@@ -1,0 +1,108 @@
+{
+  "mod_elements": [
+    {
+      "name": "StorageWorld",
+      "type": "dimension",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "storage_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storagedimension/dimension/storage_world.json",
+          "src/main/resources/data/storagedimension/dimension_type/storage_world.json"
+        ]
+      }
+    },
+    {
+      "name": "StorageBiome",
+      "type": "biome",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "storage_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storagedimension/worldgen/biome/storage_biome.json"
+        ]
+      }
+    },
+    {
+      "name": "CreativeTab",
+      "type": "tab",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Core",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "core",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storagedimension/blockstates/core.json",
+          "src/main/java/sbs/ashie/thestoragedimension/block/CoreBlock.java",
+          "src/main/java/sbs/ashie/thestoragedimension/block/entity/CoreBlockEntity.java",
+          "src/main/resources/assets/storagedimension/models/item/core.json",
+          "src/main/resources/assets/storagedimension/models/block/core.json"
+        ]
+      }
+    },
+    {
+      "name": "CoreGUI",
+      "type": "gui",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "core_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/sbs/ashie/thestoragedimension/world/inventory/CoreGUIMenu.java",
+          "src/main/java/sbs/ashie/thestoragedimension/client/gui/CoreGUIScreen.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.storagedimension.core_gui.label_empty": "",
+      "biome.storagedimension.storage_biome": "Storage Biome",
+      "gui.storagedimension.core_gui.tooltip_fuel": "Fuel",
+      "item_group.storagedimension.creative_tab": "The Storage Dimension",
+      "gui.storagedimension.core_gui.label_storage_core": "Storage Core",
+      "block.storagedimension.core": "Core",
+      "gui.storagedimension.core_gui.Status": "On?"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "storagedimension",
+    "modName": "The Storage Dimension",
+    "version": "1.0.0",
+    "author": "ash-development",
+    "license": "GNU General Public License version 3 (GPLv3)",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "credits": "meow",
+    "modElementsPackage": "sbs.ashie.thestoragedimension",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

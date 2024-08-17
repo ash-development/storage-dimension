@@ -6,13 +6,15 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
-import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
+import net.minecraft.world.InteractionResult;
 
 public class CorePlaceProcedure {
 	public CorePlaceProcedure() {
-		PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, blockentity) -> {
+		UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
+			BlockPos pos = hitResult.getBlockPos();
 			execute(world, pos.getX(), pos.getY(), pos.getZ());
-			return true;
+			return InteractionResult.PASS;
 		});
 	}
 
