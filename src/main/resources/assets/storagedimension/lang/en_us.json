@@ -1,3 +1,10 @@
 {
-  "biome.storagedimension.storage_biome": "Storage Biome"
+  "gui.storagedimension.core_gui.label_empty": "",
+  "biome.storagedimension.storage_biome": "Storage Biome",
+  "gui.storagedimension.core_gui.tooltip_fuel": "Fuel",
+  "item_group.storagedimension.creative_tab": "The Storage Dimension",
+  "gui.storagedimension.core_gui.button_enter_dimension": "Enter Dimension",
+  "gui.storagedimension.core_gui.label_storage_core": "Storage Core",
+  "block.storagedimension.core": "Core",
+  "gui.storagedimension.core_gui.Status": "On?"
 }

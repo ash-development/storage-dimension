@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "storagedimension:block/core",
+    "particle": "storagedimension:block/core"
+  },
+  "render_type": "solid"
+}

@@ -12,6 +12,7 @@
 */
 package sbs.ashie.thestoragedimension;
 
+import sbs.ashie.thestoragedimension.init.StoragedimensionModScreens;
 import sbs.ashie.thestoragedimension.init.StoragedimensionModBlocks;
 
 import net.fabricmc.api.Environment;
@@ -24,6 +25,7 @@ public class ClientInit implements ClientModInitializer {
 	public void onInitializeClient() {
 
 		StoragedimensionModBlocks.clientLoad();
+		StoragedimensionModScreens.load();
 
 	}
 }

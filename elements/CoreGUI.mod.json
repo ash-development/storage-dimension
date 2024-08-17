@@ -1,0 +1,92 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 125,
+    "height": 100,
+    "inventoryOffsetX": -317,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 157,
+          "y": 146
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_storage_core",
+          "text": {
+            "fixedValue": "Storage Core"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 76
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_fuel",
+          "text": {
+            "fixedValue": "Fuel"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 154,
+          "y": 143
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "Status",
+          "text": "On?",
+          "x": 181,
+          "y": 144
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_enter_dimension",
+          "text": "Enter Dimension",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "EnterStorageWorld"
+          },
+          "width": 103,
+          "height": 20,
+          "x": 162,
+          "y": 103
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

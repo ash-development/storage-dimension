@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "name": "The Storage Dimension",
   "authors": [
-    "ash, MCreator"
+    "ash-development"
   ],
   "contact": {
-    "homepage": "",
-    "sources": "https://github.com/ash-development/storage-dimension"
+    "homepage": "https://mcreator.net",
+    "sources": ""
   },
-  "license": "Academic Free License v3.0",
+  "license": "GNU General Public License version 3 (GPLv3)",
   "accessWidener": "storagedimension.accesswidener",
   "environment": "*",
   "entrypoints": {

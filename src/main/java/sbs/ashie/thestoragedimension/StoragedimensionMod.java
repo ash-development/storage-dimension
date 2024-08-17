@@ -12,8 +12,12 @@
  */
 package sbs.ashie.thestoragedimension;
 
+import sbs.ashie.thestoragedimension.init.StoragedimensionModTabs;
+import sbs.ashie.thestoragedimension.init.StoragedimensionModProcedures;
+import sbs.ashie.thestoragedimension.init.StoragedimensionModMenus;
 import sbs.ashie.thestoragedimension.init.StoragedimensionModItems;
 import sbs.ashie.thestoragedimension.init.StoragedimensionModBlocks;
+import sbs.ashie.thestoragedimension.init.StoragedimensionModBlockEntities;
 import sbs.ashie.thestoragedimension.init.StoragedimensionModBiomes;
 
 import org.apache.logging.log4j.Logger;
@@ -30,8 +34,15 @@ public class StoragedimensionMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Initializing StoragedimensionMod");
 
+		StoragedimensionModTabs.load();
+
 		StoragedimensionModBlocks.load();
 		StoragedimensionModItems.load();
+		StoragedimensionModBlockEntities.load();
+
+		StoragedimensionModProcedures.load();
+
+		StoragedimensionModMenus.load();
 
 		StoragedimensionModBiomes.loadEndBiomes();
 		ServerLifecycleEvents.SERVER_STARTING.register((server) -> {
