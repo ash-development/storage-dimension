@@ -1,5 +1,5 @@
 # Contributing
-Hi! Thanks for your interest in helping contribute to my mod! Please make sure to read the [README](https://github.com/ash-development/storage-dimension/issues) for an overview of the project. A big note before we continue is to please make sure you are using Gitmoji when creating commits.
+Hi! Thanks for your interest in helping contribute to my mod! Please make sure to read the [README](https://github.com/ash-development/storage-dimension/issues) for an overview of the project. A big note before we continue is to please make sure you are using [Gitmoji](https://gitmoji.dev) when creating commits.
 
 ### Issues
 
