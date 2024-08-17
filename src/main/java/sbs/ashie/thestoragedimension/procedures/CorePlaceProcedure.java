@@ -19,7 +19,7 @@ public class CorePlaceProcedure {
 		UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
 			BlockPos pos = hitResult.getBlockPos();
 			execute(world, pos.getX(), pos.getY(), pos.getZ());
-			LOGGER.info(InteractionResult.PASS);
+			LOGGER.info(InteractionResult.valueOf(execute(world, pos.getX(), pos.getY(), pos.getZ())));
 			return InteractionResult.PASS;
 		});
 	}
