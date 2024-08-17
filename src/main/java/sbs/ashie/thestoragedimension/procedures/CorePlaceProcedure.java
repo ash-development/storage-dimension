@@ -21,19 +21,18 @@ public class CorePlaceProcedure {
             LOGGER.info("pos");
 			LOGGER.info(pos);
 			execute(world, pos.getX(), pos.getY(), pos.getZ());
-            LOGGER.info("execute");
-			LOGGER.info(world);
-			LOGGER.info(pos.getX());
-			LOGGER.info(pos.getY());
-			LOGGER.info(pos.getZ());
 			return InteractionResult.PASS;
 		});
 	}
 
 	public static String execute(LevelAccessor world, double x, double y, double z) {
+		LOGGER.info("Doubles");
+		LOGGER.info(x);
+		LOGGER.info(y);
+		LOGGER.info(z);
 		//String firstplaced = "";
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StoragedimensionModBlocks.CORE) {
-			LOGGER.info((world.getBlockState(BlockPos.containing(x, y, z))).getBlock());
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == StoragedimensionModBlocks.CORE) {
+			LOGGER.info((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock());
 			if ((firstplaced).equals("false")) {
 				LOGGER.info("First placed is false. Setting to true.");
 				firstplaced = "true";
