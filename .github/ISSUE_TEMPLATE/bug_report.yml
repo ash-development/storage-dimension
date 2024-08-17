@@ -1,7 +1,7 @@
 name: Bug Report
 description: "For reporting bugs and other defects"
 labels:
-  - bug-report
+  - bug
 body:
   - type: markdown
     attributes:
