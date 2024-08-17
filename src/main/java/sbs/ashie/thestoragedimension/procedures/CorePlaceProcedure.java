@@ -18,7 +18,7 @@ public class CorePlaceProcedure {
 	public CorePlaceProcedure() {
 		UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
 			BlockPos pos = hitResult.getBlockPos();
-            LOGGER.info("pos");
+            LOGGER.info("Pos");
 			LOGGER.info(pos);
 			execute(world, pos.getX(), pos.getY(), pos.getZ());
 			return InteractionResult.PASS;
@@ -28,7 +28,7 @@ public class CorePlaceProcedure {
 	public static String execute(LevelAccessor world, double x, double y, double z) {
 		LOGGER.info("Doubles");
 		LOGGER.info(x);
-		LOGGER.info(y);
+		LOGGER.info(y - 1);
 		LOGGER.info(z);
 		//String firstplaced = "";
 		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == StoragedimensionModBlocks.CORE) {
