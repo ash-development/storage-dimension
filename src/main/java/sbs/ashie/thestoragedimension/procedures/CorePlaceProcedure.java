@@ -28,14 +28,17 @@ public class CorePlaceProcedure {
 		//String firstplaced = "";
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StoragedimensionModBlocks.CORE) {
 			if ((firstplaced).equals("false")) {
+				LOGGER.info("First placed is false. Setting to true.");
 				firstplaced = "true";
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Your first Storage Core has been placed!"), false);
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Add some fuel to get started."), false);
 			}
+			LOGGER.info("First placed is true. Returning.");
 			return "Not first placed. Returning.";
 		}
+		LOGGER.info("Not a core. Returning.");
 		return "Not a core. Returning.";
 	}
 }
