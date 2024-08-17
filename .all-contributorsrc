@@ -3,9 +3,8 @@
     "README.md"
   ],
   "imageSize": 100,
-  "commit": false,
-  "commitType": "docs",
-  "commitConvention": "angular",
+  "commit": true,
+  "commitConvention": "gitmoji",
   "contributors": [
     {
       "login": "ash-development",
