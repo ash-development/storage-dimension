@@ -7,8 +7,8 @@
     "ash, MCreator"
   ],
   "contact": {
-    "homepage": "https://mcreator.net",
-    "sources": ""
+    "homepage": "",
+    "sources": "https://github.com/ash-development/storage-dimension"
   },
   "license": "Academic Free License v3.0",
   "accessWidener": "storagedimension.accesswidener",

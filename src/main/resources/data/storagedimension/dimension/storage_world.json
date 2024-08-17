@@ -1,0 +1,19 @@
+{
+  "type": "storagedimension:storage_world",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        },
+        {
+          "block": "minecraft:white_concrete",
+          "height": 6
+        }
+      ],
+      "biome": "storagedimension:storage_biome"
+    }
+  }
+}

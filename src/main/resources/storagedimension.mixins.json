@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "sbs.ashie.thestoragedimension.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+      "StoragedimensionModRepairItemRecipeMixin",
+      "NoiseGeneratorSettingsAccess"  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

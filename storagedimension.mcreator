@@ -1,0 +1,58 @@
+{
+  "mod_elements": [
+    {
+      "name": "StorageWorld",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "storage_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storagedimension/dimension/storage_world.json",
+          "src/main/resources/data/storagedimension/dimension_type/storage_world.json"
+        ]
+      }
+    },
+    {
+      "name": "StorageBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "storage_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storagedimension/worldgen/biome/storage_biome.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "biome.storagedimension.storage_biome": "Storage Biome"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "storagedimension",
+    "modName": "The Storage Dimension",
+    "version": "1.0.0",
+    "author": "ash, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "modElementsPackage": "sbs.ashie.thestoragedimension",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}
