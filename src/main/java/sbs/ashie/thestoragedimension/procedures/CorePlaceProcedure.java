@@ -7,7 +7,10 @@ import sbs.ashie.thestoragedimension.init.StoragedimensionModBlocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.MinecraftServer;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.world.InteractionResult;
 
@@ -15,13 +18,24 @@ import static sbs.ashie.thestoragedimension.procedures.InitCoreStringProcedure.f
 
 public class CorePlaceProcedure {
 	public static final Logger LOGGER = LogManager.getLogger();
+	private static BlockPos lastInteractedPos = null;
+	private static ServerLevel lastInteractedWorld = null;
+
 	public CorePlaceProcedure() {
 		UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
-			BlockPos pos = hitResult.getBlockPos();
-            LOGGER.info("Pos");
-			LOGGER.info(pos);
-			execute(world, pos.getX(), pos.getY(), pos.getZ());
+			lastInteractedPos = hitResult.getBlockPos();
+			if (world instanceof ServerLevel) {
+				lastInteractedWorld = (ServerLevel) world;
+			}
 			return InteractionResult.PASS;
+		});
+
+		ServerTickEvents.END_SERVER_TICK.register(server -> {
+			if (lastInteractedPos != null && lastInteractedWorld != null) {
+				execute(lastInteractedWorld, lastInteractedPos.getX(), lastInteractedPos.getY(), lastInteractedPos.getZ());
+				lastInteractedPos = null;
+				lastInteractedWorld = null;
+			}
 		});
 	}
 
@@ -30,7 +44,7 @@ public class CorePlaceProcedure {
 		LOGGER.info(BlockPos.containing(x, y + 1, z));
 		LOGGER.info((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock());
 		LOGGER.info("Detecting block reg");
-		LOGGER.info(BlockPos.containing(x, y , z));
+		LOGGER.info(BlockPos.containing(x, y, z));
 		LOGGER.info((world.getBlockState(BlockPos.containing(x, y, z))).getBlock());
 		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == StoragedimensionModBlocks.CORE) {
 			LOGGER.info((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock());
