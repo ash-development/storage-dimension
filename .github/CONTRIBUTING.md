@@ -1,5 +1,5 @@
 # Contributing
-Hi! Thanks for your interest in helping contribute to my mod! Please make sure to read the [README](https://github.com/ash-development/storage-dimension/issues) for an overview of the project.
+Hi! Thanks for your interest in helping contribute to my mod! Please make sure to read the [README](https://github.com/ash-development/storage-dimension/issues) for an overview of the project. A big note before we continue is to please make sure you are using Gitmoji when creating commits.
 
 ### Issues
 
@@ -9,7 +9,7 @@ If you spot a problem, [search if an issue already exists](https://github.com/as
 
 #### Solve an issue
 
-Scan through our [existing issues](https://github.com/ash-development/storage-dimension/issues) to find one that interests you. You can narrow down the search using `labels` as filters. See "[Label reference](https://docs.github.com/en/contributing/collaborating-on-github-docs/label-reference)" for more information. As a general rule, we don’t assign issues to anyone. If you find an issue to work on, you are welcome to open a PR with a fix.
+Scan through our [existing issues](https://github.com/ash-development/storage-dimension/issues) to find one that interests you. You can narrow down the search using `labels` as filters. See "[Label reference](https://docs.github.com/en/contributing/collaborating-on-github-docs/label-reference)" for more information. Feel free to speak up and we'll be happy to assign the issue to ya. If you find an issue to work on, you are welcome to open a PR with a fix.
 
 ### Pull Request
 
