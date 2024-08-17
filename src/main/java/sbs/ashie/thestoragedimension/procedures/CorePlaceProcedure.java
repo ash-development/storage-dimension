@@ -27,6 +27,7 @@ public class CorePlaceProcedure {
 	public static String execute(LevelAccessor world, double x, double y, double z) {
 		//String firstplaced = "";
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StoragedimensionModBlocks.CORE) {
+			LOGGER.info((world.getBlockState(BlockPos.containing(x, y, z))).getBlock());
 			if ((firstplaced).equals("false")) {
 				LOGGER.info("First placed is false. Setting to true.");
 				firstplaced = "true";
