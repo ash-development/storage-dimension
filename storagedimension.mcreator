@@ -126,7 +126,7 @@
       "type": "procedure",
       "sortid": 9,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "init_core_string",
       "metadata": {
         "return_type": "string",

@@ -1,5 +1,7 @@
 package sbs.ashie.thestoragedimension.procedures;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sbs.ashie.thestoragedimension.init.StoragedimensionModBlocks;
 
 import net.minecraft.world.level.LevelAccessor;
@@ -9,17 +11,21 @@ import net.minecraft.core.BlockPos;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.world.InteractionResult;
 
+import static sbs.ashie.thestoragedimension.procedures.InitCoreStringProcedure.firstplaced;
+
 public class CorePlaceProcedure {
+	public static final Logger LOGGER = LogManager.getLogger();
 	public CorePlaceProcedure() {
 		UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
 			BlockPos pos = hitResult.getBlockPos();
 			execute(world, pos.getX(), pos.getY(), pos.getZ());
+			LOGGER.info(InteractionResult.PASS);
 			return InteractionResult.PASS;
 		});
 	}
 
 	public static String execute(LevelAccessor world, double x, double y, double z) {
-		String firstplaced = "";
+		//String firstplaced = "";
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StoragedimensionModBlocks.CORE) {
 			if ((firstplaced).equals("false")) {
 				firstplaced = "true";
