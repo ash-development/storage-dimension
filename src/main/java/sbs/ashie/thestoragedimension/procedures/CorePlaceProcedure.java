@@ -40,26 +40,26 @@ public class CorePlaceProcedure {
 	}
 
 	public static String execute(LevelAccessor world, double x, double y, double z) {
-		LOGGER.info("Detecting block +1");
-		LOGGER.info(BlockPos.containing(x, y + 1, z));
-		LOGGER.info((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock());
-		LOGGER.info("Detecting block reg");
-		LOGGER.info(BlockPos.containing(x, y, z));
-		LOGGER.info((world.getBlockState(BlockPos.containing(x, y, z))).getBlock());
+		//LOGGER.info("Detecting block +1");
+		//LOGGER.info(BlockPos.containing(x, y + 1, z));
+		//LOGGER.info((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock());
+		//LOGGER.info("Detecting block reg");
+		//LOGGER.info(BlockPos.containing(x, y, z));
+		//LOGGER.info((world.getBlockState(BlockPos.containing(x, y, z))).getBlock());
 		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == StoragedimensionModBlocks.CORE) {
-			LOGGER.info((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock());
+			//LOGGER.info((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock());
 			if ((firstplaced).equals("false")) {
-				LOGGER.info("First placed is false. Setting to true.");
+				//LOGGER.info("First placed is false. Setting to true.");
 				firstplaced = "true";
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Your first Storage Core has been placed!"), false);
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Add some fuel to get started."), false);
 			}
-			LOGGER.info("First placed is true. Returning.");
+			//LOGGER.info("First placed is true. Returning.");
 			return "Not first placed. Returning.";
 		}
-		LOGGER.info("Not a core. Returning.");
+		//LOGGER.info("Not a core. Returning.");
 		return "Not a core. Returning.";
 	}
 }
